@@ -4,10 +4,10 @@ import "fmt"
 
 type Desktop struct {
 	motherboard string
-	ram string
-	graphics string
-	storage string
-	processor string
+	ram         string
+	graphics    string
+	storage     string
+	processor   string
 }
 
 // Getters
@@ -53,11 +53,11 @@ func (d *Desktop) SetProcessor(processor string) {
 }
 
 func (d *Desktop) Display() {
-	fmt.Printf("RAM: %s,\nProcessor: %s,\nStorage: %s,\nGraphics: %s,\nMotherboard: %s,\n", 
-	d.GetRAM(),
-	d.GetProcessor(),
-	d.GetStorage(),
-	d.GetGraphics(),
-	d.GetMotherboard(),
+	fmt.Printf("RAM: %s,\nProcessor: %s,\nStorage: %s,\nGraphics: %s,\nMotherboard: %s,\n",
+		d.GetRAM(),
+		d.GetProcessor(),
+		d.GetStorage(),
+		d.GetGraphics(),
+		d.GetMotherboard(),
 	)
 }
